@@ -1,0 +1,25 @@
+#define T 60
+#include <stdio.h>
+void TIME()
+{
+    int sj = 0 , xiaoshi ,n=0 ;
+    printf("请输入：");
+    scanf("%d",&sj);
+    while (sj != 0 )
+       
+    {
+        
+        for ( sj ; sj >59 ; sj -= 60 ) {
+            n++;
+        }
+        printf("%d小时  %d分钟 ",n,sj );
+         n = 0 ;
+       scanf("%d",&sj); 
+    }
+ }
+void main()
+{
+    TIME();
+
+
+}
